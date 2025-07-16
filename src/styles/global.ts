@@ -14,16 +14,6 @@ padding: 0;
 box-sizing: border-box;
 }
 
-html {
-@media(max-width: 1080px) {
-    font-size: 93.75%;
-}
-
-@media (max-width: 720px) {
-    font-size: 87.5%;
-}
-
-}
 
 body {
     background: var(--background);
@@ -43,7 +33,7 @@ button {
   font-weight: normal;
   font-style: normal;
 
-  font-family: 'SF-Pro-Display', sans-serif;
+  font-family: 'sf-pro-display', sans-serif;
   src: url('./assets/fonts/SF-Pro-Display-Regular'); format ('otf');
   font-weight: normal;
   font-style: normal;
@@ -52,3 +42,4 @@ button {
 
 
 `
+
