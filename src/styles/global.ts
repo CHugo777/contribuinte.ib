@@ -6,6 +6,7 @@ export const GlobalStyle = createGlobalStyle `
     --background: #111827;
     --gray: #D1D5DB;
     --dark-gray: #9CA3AF;
+    --gray-w: #E8E8E8;
     }
 
 *{
@@ -20,6 +21,16 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+Header {
+     background: var(--background);
+}
+.subHeader {
+     background: var(--background);
+}
+
+.SectionRefis {
+    background: var(--gray-w);
+}
 button {
     all: unset;
     cursor: pointer;
@@ -38,7 +49,6 @@ button {
   font-weight: normal;
   font-style: normal;
 }
-
 
 
 `
