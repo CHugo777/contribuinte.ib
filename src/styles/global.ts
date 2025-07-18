@@ -28,8 +28,9 @@ Header {
      background: var(--background);
 }
 
-.SectionRefis {
+.sectionRefis {
     background: var(--gray-w);
+    min-height: 100vh;
 }
 button {
     all: unset;
