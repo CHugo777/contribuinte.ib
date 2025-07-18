@@ -36,8 +36,9 @@ button {
     all: unset;
     cursor: pointer;
     color: var(--dark-gray);
-     
 }
+
+
 
 @font-face {
   font-family: 'Panel Sans', sans-serif;
@@ -49,6 +50,56 @@ button {
   src: url('./assets/fonts/SF-Pro-Display-Regular'); format ('otf');
   font-weight: normal;
   font-style: normal;
+}
+
+.QueroAt {
+    background-color: #374151;
+    font-family: sans-serif;
+    border-radius: 12px;
+    color: #FFFFFF;
+    padding: 16px;
+    font-size: 15px;
+    margin-top: 36px;
+    margin-left: 80px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+  &:hover {
+      background-color: #31363dff; 
+    }
+  }
+;
+
+.Cadastre {
+  background-color: #374151;
+  border-radius: 12px;
+  color: #FFFFFF;
+  padding: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+&:hover {
+      background-color: #31363dff; 
+    }
+}
+
+
+
+.AcessarButton {
+    background-color: #111827;
+    border-radius: 12px;
+    color: #FFFFFF;
+    padding: 20px 40px;
+    font-size: 28px;
+    min-width: 200px;
+    min-height: 60px;
+    display: block;
+    margin: 30px auto 0;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.AcessarButton:hover {
+    background-color: #2b4c94ff;
 }
 
 

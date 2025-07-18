@@ -1,10 +1,21 @@
 import { ReactComponent as Greenball } from "../../assets/greenball.svg";
 import { ReactComponent as Redball } from "../../assets/Redball.svg";
+import { GlobalStyle } from "../../styles/global";
 
 export function SectionRefis() {
   return (
-    <div className="SectionRefis" style={{ background: '#E8E8E8', minHeight: '100vh', paddingBottom: '40px'  }}>
-      <div style={{ marginTop: '50px', textAlign: 'center' }}>
+    <div 
+    className="SectionRefis"
+     style={{
+       background: '#E8E8E8',
+        minHeight: '100vh',
+         paddingBottom: '40px'
+           }}>
+      <div
+       style={{
+         marginTop: '50px', 
+         textAlign: 'center' 
+         }}>
         <h1 style={{
           textAlign: 'center',
           fontFamily: 'Panel Sans',
@@ -19,7 +30,8 @@ export function SectionRefis() {
           color: '#424242',
           fontFamily: 'Panel Sans',
           fontSize: '12px',
-          margin: '0 auto 0',
+          maxWidth: '800px',
+          margin: '-15px auto 0',
         }}>
           Consulte os programas especiais da Prefeitura de Itaboraí com condições facilitadas para pagamento ou parcelamento de débitos. Realize simulações e adesões diretamente pelo portal, respeitando os prazos e benefícios previstos em lei.
         </p>
@@ -52,8 +64,20 @@ export function SectionRefis() {
             flexDirection: 'column',
             justifyContent: 'center',
           }}>
-            <h1 style={{ textAlign: 'center', margin: 0 }}>REFIS Lei nº 20.946/2021</h1>
-            <p style={{ textAlign: 'center', color: '#727272' }}>(com alterações da Lei nº 21.860/2023)</p>
+            <h1
+             style={{ 
+              textAlign: 'center',
+               margin: 0 
+               }}>
+                REFIS Lei nº 20.946/2021
+                </h1>
+            <p 
+            style={{ 
+              textAlign: 'center', 
+              color: '#727272'
+               }}>
+                (com alterações da Lei nº 21.860/2023)
+                </p>
           </div>
 
           <p style={{
@@ -80,8 +104,18 @@ export function SectionRefis() {
             alignItems: 'center',
             position: 'relative'
           }}>
-            <Greenball />
-            <h1>ATIVO</h1>
+            <Greenball 
+            style={{alignItems: 'center',
+             display: 'flex', 
+             marginLeft: '-3px' 
+             }} 
+             />
+            <h1 
+            style={{
+              fontWeight: '700'
+              }}>
+                ATIVO
+            </h1>
           </div>
         </div>
 
@@ -96,7 +130,7 @@ export function SectionRefis() {
           borderRadius: '10px',
         }}>
           <div style={{
-            width: '553px',
+            width: '555px',
             height: '100px',
             padding: '10px',
             borderTopRightRadius: '10px',
@@ -105,8 +139,19 @@ export function SectionRefis() {
             background: '#bbbabaff',
             margin: '-20px -3px 0 -20px',
           }}>
-            <h1 style={{ textAlign: 'center' }}>REFIS Lei nº 20.946/2021</h1>
-            <p style={{ textAlign: 'center', color: '#727272' }}>(com alterações da Lei nº 21.860/2023)</p>
+            <h1 
+            style={{ 
+            textAlign: 'center' 
+            }}>
+              REFIS Lei nº 20.946/2021
+              </h1>
+            <p 
+            style={{
+               textAlign: 'center',
+                color: '#727272' 
+                }}>
+                  (com alterações da Lei nº 21.860/2023)
+                  </p>
           </div>
 
           <p style={{
@@ -120,7 +165,7 @@ export function SectionRefis() {
           </p>
 
           <div style={{
-            width: '553px',
+            width: '554px',
             height: '94px',
             padding: '20px',
             borderBottomRightRadius: '10px',
@@ -128,29 +173,35 @@ export function SectionRefis() {
             border: '2px solid #727272',
             background: '#D4D4D4',
             margin: '58px -23px 0 -20px',
+
           }}>
             <h1 style={{ display: 'block',
-                textAlign: 'center', color: '#575757', fontSize: '25px' }}>Encerrado em 27/03/2024</h1>
-            <Redball style={{ marginLeft: '84px', position: 'relative', top: '-30px' }} />
+                textAlign: 'center',
+                paddingTop: '10px',
+                color: '#575757',
+                fontSize: '25px' 
+                }}>
+                  Encerrado em 27/03/2024
+                </h1>
+            <Redball
+            style={{ 
+              marginLeft: '84px', 
+              position: 'relative', 
+              top: '-30px' 
+              }} 
+              />
           </div>
         </div>
       </div>
-          <div style={{display: 'flex', justifyContent: 'center', marginTop: '50px'}} >
+          <div 
+          style={{display: 'flex',
+            justifyContent: 'center',
+             marginTop: '50px'
+             }}
+            >
              <button 
                 type="button" 
-                style={{
-                backgroundColor: '#111827',
-                borderRadius: '12px',
-                color: '#FFFFFF',
-                padding: '20px 40px',
-                fontSize: '28px',
-                minWidth: '200px',
-                minHeight: '60px',
-                display: 'block',
-                margin: '30px auto 0',
-                textAlign: 'center'
-                }}
-                
+                className="AcessarButton"
                 onClick={() => window.location.href = 'https://portalrefis.sefa.pr.gov.br/sefa-prp/'}
 
                 >

@@ -39,7 +39,7 @@ export function Header () {
             <div 
             style={{marginLeft: '280px', 
             display: 'flex',
-             gap: '32px'}}
+            gap: '32px'}}
              >
             <button 
             type="button">
@@ -47,12 +47,7 @@ export function Header () {
             </button>
             <button 
             type="button" 
-            style={{
-            backgroundColor: '#374151', 
-            borderRadius: '12px', 
-            color: '#FFFFFF', 
-            padding: '14px',
-            }}>
+            className='Cadastre'>
                 Cadastre-se
             </button>
             </div>

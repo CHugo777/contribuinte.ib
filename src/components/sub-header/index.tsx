@@ -4,8 +4,11 @@ import { ReactComponent as CardSvg } from "../../assets/card-not.svg";
 
 export function SubHeader () {
   return ( 
-    <div className="subHeader">
-    <h1 style={{
+    <div
+    className="subHeader"
+    >
+    <h1 
+       style={{
        color: '#D1D5DB',
        fontFamily: 'Panel Sans',
        marginLeft:'80px',
@@ -15,37 +18,35 @@ export function SubHeader () {
        >
        Um portal da fazenda 
        com tudo que você
-       precisa </h1>
+       precisa
+       </h1>
        
        <BackgroundSvg
 
        style={{ 
         marginLeft: '700px',
-        marginTop: '-130px'}} 
+        marginTop: '-130px'
+      }} 
          />
 
        <p style={{
        color: '#6f7581ff',
        fontFamily: 'SF Pro Display',
        marginTop: '-460px',
-       marginLeft: '80px'
-       }}>
-       Receba atendimento rápido, consulte o andamento dos seus processos <br/>
+       marginLeft: '80px',
+       maxWidth: '600px'
+       }}
+       >
+       Receba atendimento rápido, consulte o andamento dos seus processos 
        e acesse nossos serviços em um só lugar 
        </p>
 
        <button
         type="button"
-        style={{
-          backgroundColor: '#374151',
-          fontFamily: 'sans-serif',
-          borderRadius: '12px',
-          color: '#FFFFFF',
-          padding: '16px',
-          fontSize: '15px',
-          marginTop: '36px',
-          marginLeft: '80px'
-        }}
+        
+
+        className="QueroAt"
+
         onClick={() => window.location.href = 'https://contribuinte.ib.itaborai.rj.gov.br/#atendimento'}
       >
       Quero atendimento
@@ -66,21 +67,23 @@ export function SubHeader () {
        }}
       >
         Últimas notícias publicadas
-      </p>
-
+       </p>
        <div>
-      <CardSvg 
+       <CardSvg 
        style={{
-        marginLeft: 
-        '80px', 
+       marginLeft:'80px', 
+       marginTop:'30px'
+      }}
+      />
+      <CardSvg 
+       style={{marginLeft: '10px',
         marginTop: '30px'
       }}
       />
       <CardSvg 
-       style={{marginLeft: '10px', marginTop: '30px'}}
-      />
-      <CardSvg 
-       style={{marginLeft: '10px', marginTop: '30px'}}
+       style={{marginLeft: '10px',
+        marginTop: '30px'
+      }}
       />
       </div>
       </div>
