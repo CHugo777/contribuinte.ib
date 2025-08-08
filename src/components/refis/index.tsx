@@ -1,29 +1,34 @@
 import { ReactComponent as Greenball } from "../../assets/greenball.svg";
 import { ReactComponent as Redball } from "../../assets/Redball.svg";
+import { ReactComponent as Perd } from "../../assets/perd.svg";
+import { ReactComponent as Law } from "../../assets/law.svg"
+
+import { useNavigate } from 'react-router-dom';
 import { GlobalStyle } from "../../styles/global";
 
 export function SectionRefis() {
+  const navigate = useNavigate();
+
+  const irParaPEspec = () => {
+    window.open('/p-espec', '_blank');
+  };
+
   return (
     <div 
-    className="SectionRefis"
-     style={{
-       background: '#E8E8E8',
+      className="SectionRefis"
+      style={{
+        background: '#F4F4F4',
         minHeight: '100vh',
-         paddingBottom: '40px'
-           }}>
-      <div
-       style={{
-         marginTop: '50px', 
-         textAlign: 'center' 
-         }}>
-        <h1 style={{
+        paddingBottom: '40px'
+      }}
+    >
+      <div style={{ marginTop: '50px', textAlign: 'center' }}>
+        <Perd style={{
           textAlign: 'center',
           fontFamily: 'Panel Sans',
           fontSize: '24px',
           padding: '16px'
-        }}>
-          Programas Especiais de Regularização de Débitos
-        </h1>
+        }} />
 
         <p style={{
           textAlign: 'center',
@@ -40,174 +45,159 @@ export function SectionRefis() {
       <div style={{
         display: 'flex',
         justifyContent: 'center',
-        gap: '40px',
-        marginTop: '40px',
-        flexWrap: 'wrap' 
+        gap: '-20px',
+        flexWrap: 'wrap',
+        margin: '40px'
       }}>
-        <div style={{
-          width: '554px',
-          height: '556px',
-          padding: '20px',
-          border: '2px solid #727272',
-          borderRadius: '10px',
-        }}>
+        
+        {/* CARD 1 */}
+        <div className="card-pos">
           <div style={{
-            width: '553px',
+            width: '100%',
             height: '100px',
             padding: '10px',
             borderTopRightRadius: '10px',
             borderTopLeftRadius: '10px',
-            border: '2px solid #727272',
-            background: '#bbbabaff',
-            margin: '-20px -3px 0 -20px',
+            borderBottom: '1px solid #a3a3a3ff',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
+            boxSizing: 'border-box',
+            marginBottom: '20px',
           }}>
-            <h1
-             style={{ 
-              textAlign: 'center',
-               margin: 0 
-               }}>
-                REFIS Lei nº 20.946/2021
-                </h1>
-            <p 
-            style={{ 
-              textAlign: 'center', 
-              color: '#727272'
-               }}>
-                (com alterações da Lei nº 21.860/2023)
-                </p>
+            <div style=
+            {{display: 'flex',
+             alignItems: 'center',
+              justifyContent: 'center'
+              }}>
+            <Law />
+
+            <h1 style={{ margin: 0, marginLeft: '10px', fontFamily: 'sf-pro-display' }}>
+              REFIS Lei nº 20.946/2021
+            </h1>
+            </div>
+            <p style={{ textAlign: 'center', color: '#727272', margin: 0, fontFamily: 'Inter' }}>
+              (com alterações da Lei nº 21.860/2023)
+            </p>
           </div>
 
           <p style={{
-            fontFamily: 'sans-serif',
-            fontSize: '24px',
+            fontFamily: 'Inter',
+            fontSize: '1.2rem',
             textAlign: "center",
-            marginTop: '20px',
-            color: '#000000'
+            color: '#000000',
+            margin: '0 0 20px 0',
+            lineHeight: '1.5'
           }}>
-            A Lei nº 20.946, de 20 de dezembro de 2021, com as alterações previstas na Lei nº 21.860/2023, instituiu o Programa de Parcelamento Incentivado de ICMS, ITCMD e de créditos não tributários inscritos em dívida ativa pela Secretaria de Estado da Fazenda, possibilitando às pessoas físicas e jurídicas a regularização de débitos com redução de multa e de juros, mediante pagamento em parcela única ou parcelamento em até 180 meses.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eius praesentium enim culpa neque tempore. Aperiam necessitatibus, ex, ipsum quia perferendis sunt nihil saepe aspernatur dolorum voluptates repellendus eaque fugiat!            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eius praesentium enim culpa neque tempore. Aperiam necessitatibus, ex, ipsum quia perferendis sunt nihil saepe aspernatur dolorum voluptates repellendus eaque fugiat!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eius praesentium enim culpa neque tempore. Aperiam necessitatibus, ex, ipsum quia perferendis sunt nihil saepe aspernatur dolorum voluptates repellendus eaque fugiat!
           </p>
 
+        
+
           <div style={{
-            width: '553px',
-            height: '94px',
-            padding: '20px',
-            borderBottomRightRadius: '10px',
-            borderBottomLeftRadius: '10px',
-            border: '2px solid #727272',
-            background: '#D4D4D4',
-            margin: '58px -3px 0 -20px',
+            width: '100%',
+            height: '100px',
+            padding: '10px',
+            borderRadius: '40px',
+            border: '1px solid #a3a3a3ff',
             display: 'flex',
-            justifyContent: 'center',
             alignItems: 'center',
-            position: 'relative'
+            justifyContent: 'center',
+            position: 'relative',
+            boxSizing: 'border-box',
           }}>
-            <Greenball 
-            style={{alignItems: 'center',
-             display: 'flex', 
-             marginLeft: '-3px' 
-             }} 
-             />
-            <h1 
-            style={{
-              fontWeight: '700'
-              }}>
-                ATIVO
+            <Greenball style={{ marginRight: '10px' }} />
+            <h1 style={{
+              fontFamily: 'Inter',
+              margin: 0,
+              fontSize: '1.1rem'
+            }}>
+              ATIVO
             </h1>
           </div>
         </div>
 
-
-
-
-        <div style={{
-          width: '556px',
-          height: '556px',
-          padding: '20px',
-          border: '2px solid #727272',
-          borderRadius: '10px',
-        }}>
+        {/* CARD 2 */}
+        <div className="card-neg">
           <div style={{
-            width: '555px',
+            width: '100%',
             height: '100px',
             padding: '10px',
             borderTopRightRadius: '10px',
             borderTopLeftRadius: '10px',
-            border: '2px solid #727272',
-            background: '#bbbabaff',
-            margin: '-20px -3px 0 -20px',
+            borderBottom: '1px solid #a3a3a3ff',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            boxSizing: 'border-box',
+            marginBottom: '20px',
           }}>
-            <h1 
-            style={{ 
-            textAlign: 'center' 
-            }}>
+            <div style=
+            {{display: 'flex',
+             alignItems: 'center',
+              justifyContent: 'center'
+              }}>
+            <Law />
+            <h1 style={{ margin: 0, marginLeft: '10px', fontFamily: 'sf-pro-display' }}>
               REFIS Lei nº 20.946/2021
-              </h1>
-            <p 
-            style={{
-               textAlign: 'center',
-                color: '#727272' 
-                }}>
-                  (com alterações da Lei nº 21.860/2023)
-                  </p>
+            </h1>
+            </div>
+            <p style={{ textAlign: 'center', color: '#727272', margin: 0, fontFamily: 'Inter' }}>
+              (com alterações da Lei nº 21.860/2023)
+            </p>
           </div>
 
           <p style={{
-            fontFamily: 'sans-serif',
-            fontSize: '24px',
+            fontFamily: 'Inter',
+            fontSize: '1.2rem',
             textAlign: "center",
-            marginTop: '20px',
-            color: '#000000'
+            color: '#000000',
+            margin: '0 0 20px 0',
+            lineHeight: '1.5',
+            
+            
           }}>
-            A Lei nº 20.946, de 20 de dezembro de 2021, com as alterações previstas na Lei nº 21.860/2023, instituiu o Programa de Parcelamento Incentivado de ICMS, ITCMD e de créditos não tributários inscritos em dívida ativa pela Secretaria de Estado da Fazenda, possibilitando às pessoas físicas e jurídicas a regularização de débitos com redução de multa e de juros, mediante pagamento em parcela única ou parcelamento em até 180 meses.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eius praesentium enim culpa neque tempore. Aperiam necessitatibus, ex, ipsum quia perferendis sunt nihil saepe aspernatur dolorum voluptates repellendus eaque fugiat!            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eius praesentium enim culpa neque tempore. Aperiam necessitatibus, ex, ipsum quia perferendis sunt nihil saepe aspernatur dolorum voluptates repellendus eaque fugiat!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eius praesentium enim culpa neque tempore. Aperiam necessitatibus, ex, ipsum quia perferendis sunt nihil saepe aspernatur dolorum voluptates repellendus eaque fugiat!
+
           </p>
 
           <div style={{
-            width: '554px',
-            height: '94px',
-            padding: '20px',
-            borderBottomRightRadius: '10px',
-            borderBottomLeftRadius: '10px',
-            border: '2px solid #727272',
-            background: '#D4D4D4',
-            margin: '58px -23px 0 -20px',
-
+            width: '100%',
+            height: '100px',
+            padding: '10px',
+            borderRadius: '40px',
+            border: '1px solid #a3a3a3ff',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            position: 'relative',
+            boxSizing: 'border-box',
           }}>
-            <h1 style={{ display: 'block',
-                textAlign: 'center',
-                paddingTop: '10px',
-                color: '#575757',
-                fontSize: '25px' 
-                }}>
-                  Encerrado em 27/03/2024
-                </h1>
-            <Redball
-            style={{ 
-              marginLeft: '84px', 
-              position: 'relative', 
-              top: '-30px' 
-              }} 
-              />
+            <Redball style={{ marginRight: '10px' }} />
+            <h1 style={{
+              fontFamily: 'Inter',
+              margin: 0,
+              fontSize: '1.1rem',
+              color: '#575757'
+            }}>
+              Encerrado em 27/03/2024
+            </h1>
           </div>
         </div>
       </div>
-          <div 
-          style={{display: 'flex',
-            justifyContent: 'center',
-             marginTop: '50px'
-             }}
-            >
-             <button 
-                type="button" 
-                className="AcessarButton"
-                onClick={() => window.location.href = 'https://portalrefis.sefa.pr.gov.br/sefa-prp/'}
-
-                >
-                    ACESSAR
-             </button>
-          </div>
+        <button
+            type="button"
+            className="AcessarButton"
+            onClick={irParaPEspec}
+            style={{
+              margin: '5px auto 30px auto', 
+    display: 'block',
+            }}
+          >
+            ACESSAR
+          </button>
     </div>
   );
 }

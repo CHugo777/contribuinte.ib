@@ -68,11 +68,16 @@ export function SubHeader () {
       >
         Últimas notícias publicadas
        </p>
-       <div>
+       <div 
+       style={{
+        display: 'flex',
+       alignItems: 'center'
+       }}>
        <CardSvg 
        style={{
        marginLeft:'80px', 
-       marginTop:'30px'
+       marginTop:'30px',
+
       }}
       />
       <CardSvg 
@@ -82,7 +87,8 @@ export function SubHeader () {
       />
       <CardSvg 
        style={{marginLeft: '10px',
-        marginTop: '30px'
+        marginTop: '30px',
+         marginRight: '13px'
       }}
       />
       </div>

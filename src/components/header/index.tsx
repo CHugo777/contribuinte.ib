@@ -47,7 +47,10 @@ export function Header () {
             </button>
             <button 
             type="button" 
-            className='Cadastre'>
+            className='Cadastre'
+            style={{
+                whiteSpace: 'nowrap'
+            }}>
                 Cadastre-se
             </button>
             </div>

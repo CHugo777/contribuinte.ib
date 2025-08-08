@@ -36,6 +36,7 @@ button {
     all: unset;
     cursor: pointer;
     color: var(--dark-gray);
+    font-family: 'Inter', sans-serif;
 }
 
 
@@ -99,7 +100,44 @@ button {
 }
 
 .AcessarButton:hover {
-    background-color: #2b4c94ff;
+    background-color: #275cceff;
+}
+
+.card-neg {
+  max-width: 554px;
+  width: 100%;
+  padding: 20px;
+  border: 2px solid #727272;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: not-allowed;
+  transition: border 300ms ease-in-out;
+}
+
+.card-neg:hover {
+  border-color: #e40d0dff;
+}
+
+.card-pos {
+  max-width: 554px;
+  width: 100%;
+  padding: 20px;
+  border: 2px solid #727272;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin: 20px -120px 17px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: border-color 300ms ease-in-out;
+}
+
+.card-pos:hover {
+ 
 }
 
 
